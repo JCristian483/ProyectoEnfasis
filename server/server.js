@@ -16,8 +16,7 @@ var missingdocs = require('./routes/missingdocs-route');
 mongoose.Promise = global.Promise;
 
 // connect to MongoDB
-mongoose.connect('mongodb://localhost/MissingDocsPOLI')
-    .then(() => {
+mongoose.connect('mongodb://localhost/MissingDocsPOLI').then((data) => {
         console.log('Conectado a MongoDB!!!');
     })
     .catch((err) => {
