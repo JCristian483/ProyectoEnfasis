@@ -1,17 +1,17 @@
 'use strict';
 
-let express = require('express');
-let path = require('path');
-let favicon = require('serve-favicon');
-let logger = require('morgan');
-let cookieParser = require('cookie-parser');
-let bodyParser = require('body-parser');
-let mongoose = require('mongoose');
-let cors = require('cors');
+var express = require('express');
+var path = require('path');
+var favicon = require('serve-favicon');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+var cors = require('cors');
 
-let index = require('./routes/index-route');
-let users = require('./routes/users-route');
-let missingdocs = require('./routes/missingdocs-route');
+var index = require('./routes/index-route');
+var users = require('./routes/users-route');
+var missingdocs = require('./routes/missingdocs-route');
 
 mongoose.Promise = global.Promise;
 
@@ -24,7 +24,7 @@ mongoose.connect('mongodb://localhost/MissingDocsPOLI')
         console.err('Error de conexión con MongoDB: ' + err);
     });
 
-let app = express();
+var app = express();
 
 //app.use(favicon(path.join(__dirname, '../client', 'favicon.ico')));
 app.use(cors());
