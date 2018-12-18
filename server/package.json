@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ADavidCruzG/ProyectoEnfasis"
+    "url": "https://github.com/JCristian483/ProyectoEnfasis"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
